@@ -169,42 +169,45 @@
                     </div>
                     
                     <div class="modal-body">
-                         <form action="#" id="contact-form">
+                         <form action="#" id="contact-form" method="post">
+
+                              <input type="text" id="carID" class="form-control" placeholder="Car ID" required>
+
                               <div class="row">
                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Pick-up location" required>
+                                        <input type="text" id="pickupLocation" class="form-control" placeholder="Pick-up location" required>
                                    </div>
 
                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Return location" required>
+                                        <input type="text" id="returnLocation" class="form-control" placeholder="Return location" required>
                                    </div>
                               </div>
 
                               <div class="row">
                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Pick-up date/time" required>
+                                        <input type="text" id="pickupDate" class="form-control" placeholder="Pick-up date/time" required>
                                    </div>
 
                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Return date/time" required>
+                                        <input type="text" id="returnDate" class="form-control" placeholder="Return date/time" required>
                                    </div>
                               </div>
-                              <input type="text" class="form-control" placeholder="Enter full name" required>
+                              <input type="text" id="name" class="form-control" placeholder="Enter full name" required>
 
                               <div class="row">
                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Enter email address" required>
+                                        <input type="text" id="emailReservation" class="form-control" placeholder="Enter email address" required>
                                    </div>
 
                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Enter phone" required>
+                                        <input type="text" id="phone" class="form-control" placeholder="Enter phone" required>
                                    </div>
                               </div>
                          </form>
                     </div>
 
                     <div class="modal-footer">
-                         <button type="button" class="section-btn btn btn-primary">Book Now</button>
+                         <input type="submit" class="section-btn btn btn-primary" value="Book Now">
                     </div>
                </div>
           </div>
@@ -217,6 +220,8 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
      <script src="js/fleet.js"></script>
+     <script src="js/postReservation.js"></script>
+
 
 </body>
 </html>
